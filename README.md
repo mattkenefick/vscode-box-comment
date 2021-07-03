@@ -1,6 +1,5 @@
 # Ascii Box Comments
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mattkenefick.vscode-box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=mattkenefick.vscode-box-comment)
 [![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/mattkenefick.vscode-box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=mattkenefick.vscode-box-comment)
 [![Backers on Patreon](https://img.shields.io/badge/backer-Patreon-orange.svg)](https://www.patreon.com/mattkenefick)
