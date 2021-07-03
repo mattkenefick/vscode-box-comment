@@ -1,20 +1,19 @@
 {
-  "name": "box-comment",
-	"displayName": "Box Comment",
-	"description": "Allows user to write comments within an ASCII drawn box",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.57.0"
+	"activationEvents": [
+		"onCommand:box-comment.createBox",
+		"onCommand:box-comment.createBox80",
+		"onCommand:box-comment.createBox120"
+	],
+	"author": {
+		"name": "Matt Kenefick",
+		"email": "matt@polymermallard.com"
+	},
+	"bugs": {
+		"url": "https://github.com/mattkenefick/vscode-box-comment/issues"
 	},
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-        "onCommand:box-comment.createBox",
-        "onCommand:box-comment.createBox80",
-        "onCommand:box-comment.createBox120"
-	],
-	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
 			{
@@ -31,17 +30,7 @@
 			}
 		]
 	},
-	"scripts": {
-		"vscode:prepublish": "yarn run package",
-		"compile": "webpack",
-		"watch": "webpack --watch",
-		"package": "webpack --mode production --devtool hidden-source-map",
-		"test-compile": "tsc -p ./",
-		"test-watch": "tsc -watch -p ./",
-		"pretest": "yarn run test-compile && yarn run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
-	},
+	"description": "Allows user to write comments within an ASCII drawn box",
 	"devDependencies": {
 		"@types/vscode": "^1.57.0",
 		"@types/glob": "^7.1.3",
@@ -57,5 +46,31 @@
 		"ts-loader": "^9.2.2",
 		"webpack": "^5.38.1",
 		"webpack-cli": "^4.7.0"
-	}
+	},
+	"displayName": "Box Comment",
+	"engines": {
+		"vscode": "^1.57.0"
+	},
+	"galleryBanner": {
+		"color": "#d94545",
+		"theme": "light"
+	},
+	"homepage": "https://github.com/mattkenefick/vscode-box-comment",
+    "icon": "assets/icon.png",
+	"license": "MIT",
+	"main": "./dist/extension.js",
+	"name": "box-comment",
+	"publisher": "Polymer Mallard",
+	"scripts": {
+		"vscode:prepublish": "yarn run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"test-compile": "tsc -p ./",
+		"test-watch": "tsc -watch -p ./",
+		"pretest": "yarn run test-compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"version": "0.0.1"
 }
