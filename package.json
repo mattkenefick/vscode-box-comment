@@ -19,15 +19,15 @@
 		"commands": [
 			{
 				"command": "box-comment.createBox",
-				"title": "Create comment Box (via config)"
+				"title": "Create comment box (via config)"
 			},
 			{
 				"command": "box-comment.createBox80",
-				"title": "Create comment Box (80 wide)"
+				"title": "Create comment box (80 wide)"
 			},
 			{
 				"command": "box-comment.createBox120",
-				"title": "Create comment Box (120 wide)"
+				"title": "Create comment box (120 wide)"
 			}
 		]
 	},

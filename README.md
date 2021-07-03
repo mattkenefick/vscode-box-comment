@@ -1,70 +1,83 @@
-# box-comment README
+# Ascii Box Comments
 
-This is the README for your extension "box-comment". After writing up a brief description, we recommend including the following sections.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mattkenefick.vscode-box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=mattkenefick.vscode-box-comment)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/mattkenefick.vscode-box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=mattkenefick.vscode-box-comment)
+[![Backers on Patreon](https://img.shields.io/badge/backer-Patreon-orange.svg)](https://www.patreon.com/mattkenefick)
+[![Backers on Paypal](https://img.shields.io/badge/backer-Paypal-blue.svg)](https://paypal.me/polymermallard)
 
-## Features
+Generates a clean comment box using ascii box drawing characters around a selection. Inspired by this prototype: https://prototypes.polymermallard.com/docblock/index.html
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
+## Example
 
-\!\[feature X\]\(images/feature-x.png\)
+```PHP
+#
+# ┌────────────────────────────────────────────────────────────────────────────┐
+# │                                                                            │
+# │ This is a comment of documentation (Doc Block)                             │
+# │                                                                            │
+# │ @param Request $request                                                    │
+# │ @return Response                                                           │
+# │ @throws \Exception                                                         │
+# │                                                                            │
+# └────────────────────────────────────────────────────────────────────────────┘
+#
+```
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Configuration
 
-## Requirements
+The plugin defaults to single line box drawing and 80 characters wide. You can change these in your settings:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+```
+"box-comment.chars": {
+        "tl": "╔",
+        "tm": "═",
+        "tr": "╗",
+        "l" : "║",
+        "r" : "║",
+        "bl": "╚",
+        "bm": "═",
+        "br": "╝",
+        "dl": "╠",
+        "dm": "═",
+        "dr": "╣"
+    },
+"box-comment.length": 60
+```
 
-## Extension Settings
+## Usage
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Three commands exist:
 
-For example:
+    - Create comment box (via config)
+    - Create comment box (80 wide)
+    - Create comment box (120 wide)
 
-This extension contributes the following settings:
+The configuration setting is a numerical value for `box-comment.length`.
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+## Special Features
 
-## Known Issues
+Dividers are supported by using two hyphens: `--`
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+```
+Lorem ipsum dolor sit amet
+--
+Consectetur adipiscing elit
+```
+
+Becomes:
+
+```
+// ╔══════════════════════════════════════════════════════════╗
+// ║ Lorem ipsum dolor sit amet                               ║
+// ╠══════════════════════════════════════════════════════════╣
+// ║ Consectetur adipiscing elit                              ║
+// ╚══════════════════════════════════════════════════════════╝
+```
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial creation of Box Comment
