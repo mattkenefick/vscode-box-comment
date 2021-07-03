@@ -56,7 +56,7 @@
 		"theme": "light"
 	},
 	"homepage": "https://github.com/mattkenefick/vscode-box-comment",
-    "icon": "assets/icon.png",
+    "icon": "assets/logo.png",
 	"license": "MIT",
 	"main": "./dist/extension.js",
 	"name": "box-comment",
@@ -76,5 +76,5 @@
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js"
 	},
-	"version": "0.0.1"
+	"version": "0.1.0"
 }
