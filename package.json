@@ -60,7 +60,7 @@
 	"license": "MIT",
 	"main": "./dist/extension.js",
 	"name": "box-comment",
-	"publisher": "Polymer Mallard",
+	"publisher": "polymermallard",
 	"scripts": {
 		"vscode:prepublish": "yarn run package",
 		"compile": "webpack",
