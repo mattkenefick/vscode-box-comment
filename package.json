@@ -28,7 +28,14 @@
 				"command": "box-comment.createBox120",
 				"title": "Create comment box (120 wide)"
 			}
-		]
+		],
+        "keybindings": [
+            {
+                "command": "extension.createBox",
+                "key": "ctrl+alt+;",
+                "mac": "shift+cmd+;"
+            }
+        ]
 	},
 	"description": "Allows user to write comments within an ASCII drawn box",
 	"devDependencies": {
@@ -52,7 +59,7 @@
 		"vscode": "^1.57.0"
 	},
 	"galleryBanner": {
-		"color": "#d94545",
+		"color": "#d9d9d9",
 		"theme": "light"
 	},
 	"homepage": "https://github.com/mattkenefick/vscode-box-comment",
@@ -60,7 +67,7 @@
 	"license": "MIT",
 	"main": "./dist/extension.js",
 	"name": "box-comment",
-	"publisher": "polymermallard",
+	"publisher": "PolymerMallard",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mattkenefick/vscode-box-comment.git"
@@ -76,5 +83,5 @@
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js"
 	},
-	"version": "0.1.0"
+	"version": "0.1.2"
 }

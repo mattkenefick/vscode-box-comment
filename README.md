@@ -1,7 +1,7 @@
 # Ascii Box Comments
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mattkenefick.vscode-box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=mattkenefick.vscode-box-comment)
-[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/mattkenefick.vscode-box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=mattkenefick.vscode-box-comment)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/polymermallard.box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=polymermallard.box-comment)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/polymermallard.box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=polymermallard.box-comment)
 [![Backers on Patreon](https://img.shields.io/badge/backer-Patreon-orange.svg)](https://www.patreon.com/mattkenefick)
 [![Backers on Paypal](https://img.shields.io/badge/backer-Paypal-blue.svg)](https://paypal.me/polymermallard)
 
@@ -57,6 +57,10 @@ Three commands exist:
     - Create comment box (120 wide)
 
 The configuration setting is a numerical value for `box-comment.length`.
+
+## Key Bindings
+
+For Mac/PC: `shift+cmd+;` / `shift+alt+;` will run `Create comment box (via config)`
 
 ## Special Features
 

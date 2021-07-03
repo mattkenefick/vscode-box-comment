@@ -75,6 +75,12 @@ export function activate(context: vscode.ExtensionContext) {
 
             // Comment our box with inherited delimiters
             commentSelection();
+
+            // Remove selection (next tick)
+            setTimeout(() => {
+                const position: vscode.Position = new vscode.Position(selection.end.line + 3, 0);
+                editor.selection = new vscode.Selection(position, position);
+            }, 1);
         }
     }
 
