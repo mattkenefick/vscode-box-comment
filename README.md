@@ -84,6 +84,18 @@ Becomes:
 
 ## Release Notes
 
+### 0.1.2
+
+Added keybindings by default.
+
+### 0.1.1
+
+Change various graphics and README data
+
+### 0.1.0
+
+Initial publication
+
 ### 0.0.1
 
 Initial creation of Box Comment
