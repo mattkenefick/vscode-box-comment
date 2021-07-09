@@ -1,5 +1,6 @@
 # Ascii Box Comments
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/mattkenefick/vscode-box-comment)
 [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/polymermallard.box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=polymermallard.box-comment)
 [![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/polymermallard.box-comment.svg)](https://marketplace.visualstudio.com/items?itemName=polymermallard.box-comment)
 [![Backers on Patreon](https://img.shields.io/badge/backer-Patreon-orange.svg)](https://www.patreon.com/mattkenefick)
