@@ -84,7 +84,7 @@ export async function insertBox(lineLength: number = 80): Promise<void> {
 
 	// Remove selection (next tick)
 	setTimeout(() => {
-		const position: vscode.Position = new vscode.Position(selection.end.line + 3, 0);
+		const position: vscode.Position = new vscode.Position((selection?.end?.line || 0) + 3, 0);
 		editor.selection = new vscode.Selection(position, position);
 	}, 1);
 }

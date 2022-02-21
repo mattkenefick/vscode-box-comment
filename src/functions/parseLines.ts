@@ -64,7 +64,7 @@ export function parseLines(selection: vscode.Selection, maxLineLength: number = 
 	// Process each line
 	masterArray.forEach((line: string, index: number) => {
 		if (line.trim() === '--') {
-			masterArray[index] = CHAR_DM.repeat(maxLineLength - 2); // - 2 because we remove the spaces
+			masterArray[index] = Constants.CHAR_DM.repeat(maxLineLength - 2); // - 2 because we remove the spaces
 		}
 		else {
 			masterArray[index] = line + ' '.repeat(Math.max(0, maxLineLength - line.length - 4));

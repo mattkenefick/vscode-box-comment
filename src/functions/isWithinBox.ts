@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import constants from '../constants';
+import Constants from '../constants';
 
 /**
  * Figure out if we're inside an existing box already
@@ -9,7 +9,7 @@ import constants from '../constants';
  * @return boolean
  */
 export function isWithinBox(removeComments: boolean = true, lineNumber: number = -1): boolean {
-	const editor: vscode.TextEditor = vscode.window.activeTextEditor;
+	const editor = vscode.window.activeTextEditor;
 	const document: vscode.TextDocument | undefined = editor?.document;
 	const selection: vscode.Selection | undefined = editor?.selection;
 
@@ -30,8 +30,8 @@ export function isWithinBox(removeComments: boolean = true, lineNumber: number =
 	}
 
 	return (
-		line.charAt(0) === constants.CHAR_TL
-		|| line.charAt(0) === constants.CHAR_L
-		|| line.charAt(0) === constants.CHAR_BL
+		line.charAt(0) === Constants.CHAR_TL
+		|| line.charAt(0) === Constants.CHAR_L
+		|| line.charAt(0) === Constants.CHAR_BL
 	);
 }
