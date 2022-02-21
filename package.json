@@ -5,8 +5,8 @@
 		"onCommand:box-comment.createBox120"
 	],
 	"author": {
-		"name": "Matt Kenefick",
-		"email": "matt@polymermallard.com"
+		"email": "matt@polymermallard.com",
+		"name": "Matt Kenefick"
 	},
 	"bugs": {
 		"url": "https://github.com/mattkenefick/vscode-box-comment/issues"
@@ -29,28 +29,28 @@
 				"title": "Create comment box (120 wide)"
 			}
 		],
-        "keybindings": [
-            {
-                "command": "extension.createBox",
-                "key": "ctrl+alt+;",
-                "mac": "shift+cmd+;"
-            }
-        ]
+		"keybindings": [
+			{
+				"command": "extension.createBox",
+				"key": "ctrl+alt+;",
+				"mac": "shift+cmd+;"
+			}
+		]
 	},
 	"description": "Allows user to write comments within an ASCII drawn box",
 	"devDependencies": {
-		"@types/vscode": "^1.57.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.2.2",
 		"@types/node": "14.x",
-		"eslint": "^7.27.0",
+		"@types/vscode": "^1.57.0",
 		"@typescript-eslint/eslint-plugin": "^4.26.0",
 		"@typescript-eslint/parser": "^4.26.0",
+		"eslint": "^7.27.0",
 		"glob": "^7.1.7",
 		"mocha": "^8.4.0",
+		"ts-loader": "^9.2.2",
 		"typescript": "^4.3.2",
 		"vscode-test": "^1.5.2",
-		"ts-loader": "^9.2.2",
 		"webpack": "^5.38.1",
 		"webpack-cli": "^4.7.0"
 	},
@@ -63,7 +63,7 @@
 		"theme": "light"
 	},
 	"homepage": "https://github.com/mattkenefick/vscode-box-comment",
-    "icon": "assets/logo.png",
+	"icon": "assets/logo.png",
 	"license": "MIT",
 	"main": "./dist/extension.js",
 	"name": "box-comment",
@@ -73,15 +73,18 @@
 		"url": "https://github.com/mattkenefick/vscode-box-comment.git"
 	},
 	"scripts": {
-		"vscode:prepublish": "yarn run package",
 		"compile": "webpack",
-		"watch": "webpack --watch",
+		"lint": "eslint src --ext ts",
 		"package": "webpack --mode production --devtool hidden-source-map",
+		"pretest": "yarn run test-compile && yarn run lint",
+		"test": "node ./out/test/runTest.js",
 		"test-compile": "tsc -p ./",
 		"test-watch": "tsc -watch -p ./",
-		"pretest": "yarn run test-compile && yarn run lint",
-		"lint": "eslint src --ext ts",
-		"test": "node ./out/test/runTest.js"
+		"vscode:prepublish": "yarn run package",
+		"watch": "webpack --watch"
 	},
-	"version": "0.1.2"
+	"version": "0.1.7",
+	"dependencies": {
+		"vsce": "^2.6.7"
+	}
 }
