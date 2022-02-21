@@ -78,18 +78,31 @@ Becomes:
 
 ## Release Notes
 
+### 0.1.7
+
+-   Ability to uncomment entire blocks back to normal
+-   Use block comments rather than line blocks
+-   `box-comment.indentation` setting for pre-indentation
+-   `box-comment.length` setting for total line length
+-   `box-comment.linebreak.before` boolean flag
+-   `box-comment.linebreak.after` boolean flag
+
 ### 0.1.2
 
-Added keybindings by default.
+-   Added keybindings by default.
 
 ### 0.1.1
 
-Change various graphics and README data
+-   Change various graphics and README data
 
 ### 0.1.0
 
-Initial publication
+-   Initial publication
 
 ### 0.0.1
 
-Initial creation of Box Comment
+-   Initial creation of Box Comment
+
+#### Packaging
+
+We are using `vsce` to package and publish. `yarn vsce publish`
