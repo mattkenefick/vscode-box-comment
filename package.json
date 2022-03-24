@@ -31,9 +31,86 @@
 		],
 		"keybindings": [
 			{
-				"command": "extension.createBox",
+				"command": "box-comment.createBox",
 				"key": "ctrl+alt+;",
 				"mac": "shift+cmd+;"
+			}
+		],
+		"configuration": [
+			{
+				"title": "Box Comment",
+				"properties": {
+					"box-comment.chars.tl": {
+						"type": "string",
+						"default": "╔",
+						"description": "Top left corner character"
+					},
+					"box-comment.chars.tm": {
+						"type": "string",
+						"default": "═",
+						"description": "Top middle character"
+					},
+					"box-comment.chars.tr": {
+						"type": "string",
+						"default": "╗",
+						"description": "Top right character"
+					},
+					"box-comment.chars.l": {
+						"type": "string",
+						"default": "║",
+						"description": "Top middle character"
+					},
+					"box-comment.chars.r": {
+						"type": "string",
+						"default": "║",
+						"description": "Right character"
+					},
+					"box-comment.chars.bl": {
+						"type": "string",
+						"default": "╚",
+						"description": "Bottom left character"
+					},
+					"box-comment.chars.bm": {
+						"type": "string",
+						"default": "═",
+						"description": "Bottom middle character"
+					},
+					"box-comment.chars.br": {
+						"type": "string",
+						"default": "╝",
+						"description": "Bottom right character"
+					},
+					"box-comment.chars.dl": {
+						"type": "string",
+						"default": "╠",
+						"description": "Devider left character"
+					},
+					"box-comment.chars.dm": {
+						"type": "string",
+						"default": "═",
+						"description": "Devider middle character"
+					},
+					"box-comment.chars.dr": {
+						"type": "string",
+						"default": "╣",
+						"description": "Devider right character"
+					},
+					"box-comment.length": {
+						"type": "number",
+						"default": 80,
+						"description": "Comment width"
+					},
+					"box-comment.linebreak.after": {
+						"type": "string",
+						"default": "\\n",
+						"description": "Linebreak character after comment"
+					},
+					"box-comment.linebreak.before": {
+						"type": "string",
+						"default": "\\n",
+						"description": "Linebreak character before comment"
+					}
+				}
 			}
 		]
 	},
